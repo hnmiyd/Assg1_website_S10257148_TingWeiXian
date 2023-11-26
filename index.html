@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My html for Assessment 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASG1_WeiXian</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -29,9 +35,11 @@
         </section>
 
         <section class="music" id="music">
-            <h2 >Music</h2>
+            <h2 class="sec-title">Music</h2>
             <p>Here are some of renforshort's best tracks, showcasing a variety of musical styles and capturing their
                 artistic journey.</p>
+            <div class="music-album">
+                <div class="spotify-track">
                     <iframe style="border-radius:20px"
                         src="https://open.spotify.com/embed/track/2GzlTbrFF2V6MwRDfBnYhf?utm_source=generator"
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
@@ -42,7 +50,8 @@
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
-
+                </div>
+                <div class="spotify-track">
                     <iframe style="border-radius:20px"
                         src="https://open.spotify.com/embed/track/5LIwaCUAPW3ugjQ5ls3Fxs?utm_source=generator"
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
@@ -53,27 +62,36 @@
                         width="100%" height="352" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
-
+                </div>
+            </div>
         </section>
 
         <section class="shows" id="shows">
-            <h2>Shows</h2>
+            <h2 class="sec-title">Shows</h2>
+            <div class="row">
+                <div class="card">
                     <img src="img/stadium.webp" alt="">
                     <h3>Singapore National Stadium</h3>
                     <p>Date : 08 March 2024</p>
                     <p>Some Placeholder text</p>
+                </div>
 
-                    <img src="" alt="">
+                <div class="card">
+                    <img src="img/stadium.webp" alt="">
                     <h3>Singapore National Stadium</h3>
                     <p>Date : 14 March 2024</p>
                     <p> Some Placeholder text</p>
-
-                    <img src="" alt="">
+                </div>
+                <div class="card">
+                    <img src="img/stadium.webp" alt="">
                     <h3>Singapore National Stadium</h3>
                     <p>Date : 20 March 2024</p>
                     <p>Some Placeholder text</p>
-        </section>
+                </div>
 
+            </div>
+        </section>
+        
         <div id="merch">
             <h2>Merch</h2>
             <p>Get your hands on Renforshort's cool stuff! We've got awesome T-shirts with the band's cool art, vinyl
