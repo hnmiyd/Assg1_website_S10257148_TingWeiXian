@@ -17,3 +17,42 @@ hamburger.addEventListener("click",()=>{
         hamburger.classList.add("fa-x");
     }
 })
+
+links.forEach((link, index)=>{
+    link.addEventListener("click",()=>{
+        links.forEach((menu_link)=>{
+            menu_link.classList.remove("active-li")
+        })
+        links[index].classList.add("active-li");
+        nav.classList.remove("nav-active")
+        header.classList.remove("header-fixed")
+        hamburger.classList.add("fa-menu")
+        hamburger.classList.remove("fa-x");
+    })
+})
+
+window.addEventListener('scroll',()=>{
+    if(window.scrollY > 80){
+        header.classList.add("bg-header")
+    }
+    else{
+        header.classList.remove("bg-header")
+    }
+})
+
+$('.slides').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1080,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+  });
