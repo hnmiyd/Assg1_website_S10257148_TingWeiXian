@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASG1_WeiXian</title>
+    <title>Band</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -17,21 +17,26 @@
         <div class="logo">
             <a href="#home"><h3>Renforshort</h3></a>
         </div>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+        <nav class="menu">
             <ul>
-                <li><a href="#home">About</a></li>
+                <li class="active-li"><a href="#home">About</a></li>
                 <li><a href="#music">Music</a></li>
                 <li><a href="#shows">Shows</a></li>
                 <li><a href="#merch">Merch</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+        </nav>
     </header>
     <main>
         <section class="hero" id="home">
+            <div class="text">
                 <h3>Renforshort</h3>
                 <p>Lauren Isenberg (born May 7, 2002), known professionally as Renforshort (stylized as renforshort[3])
-                     is a Canadian singer and songwriter from Toronto. Debuting independently in 2019 with the singles 
+                     is a Canadian singer and songwriter from Toronto. Debuting independently in 2019 with the singles
                      "Waves" and "Mind Games", Isenberg released her debut extended play, the Teenage Angst EP, in March 2020.</p>
-                <a href="#music" >Explore Music </a>
+                <a href="#music" class="explore-btn">Explore Music <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
         </section>
 
         <section class="music" id="music">
@@ -91,7 +96,7 @@
 
             </div>
         </section>
-
+        
         <section id="merch">
             <h2 class="sec-title">Merch</h2>
             <p>Get your hands on Renforshort's cool stuff! We've got awesome T-shirts with the band's cool art, vinyl
@@ -125,18 +130,25 @@
                 </div>
             </div>
         </section>
-        
         <section class="contact" id="contact">
-            <h2 >Contact</h2>
+            <h2 class="sec-title">Contact</h2>
+            <div class="social">
                 <p>Connect with us on social media for the latest updates, news, and a glimpse into our vibrant online
                     community. Join us today!</p>
-                    <a href="https://www.instagram.com/renforshort/"></a>
-                    <a href="https://twitter.com/renforshort"></a>
-                    <a href="https://www.facebook.com/renforshortmusic"></a>
-                    <a href="https://www.youtube.com/channel/UClsF16g9stu4bALw0otrjrw"></i></a>
-                    <a href="https://open.spotify.com/artist/3GYvf7puxwkr51EYoD9E7D"></i></a>
+                <div class="links">
+                    <a href="https://www.instagram.com/renforshort/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/renforshort"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/renforshortmusic"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UClsF16g9stu4bALw0otrjrw"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://open.spotify.com/artist/3GYvf7puxwkr51EYoD9E7D"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
