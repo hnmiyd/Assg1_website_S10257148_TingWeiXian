@@ -22,13 +22,11 @@ header{
 .bg-header{
     background-color: aliceblue;
 }
-
 .logo{
     width: fit-content;
     display: block;
     margin: 0px auto;
     background-color: #333;
-    padding: 10px 20px;
     color: #fff;
     border-radius: 25px;
 }
@@ -50,16 +48,27 @@ nav ul{
 nav ul li{
     position: relative;
 }
-.logo{
-    width: fit-content;
-    display: block;
-    margin: 0px auto;
-    background-color: #333;
-    padding: 10px 20px;
+nav ul li a{
+    font-size: 21px;
     color: #fff;
-    border-radius: 25px;
+    font-weight: 600;
 }
-
+.active-li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    border: 5px;
+}
+.bg-header nav ul li a{
+    color: #333;
+}
+.bg-header .active-li::after{
+    background-color: #333;
+}
 .hero{
     width: 100%;
     height: 100vh;
@@ -69,9 +78,9 @@ nav ul li{
     background-size: cover;
     background-attachment: scroll;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
+
 .hero .text{
     width: 50%;
     color: #fff;
@@ -86,12 +95,50 @@ nav ul li{
     font-size: 18px;
     color: #d8d8d8;
 }
+.explore-btn{
+    background-color: aliceblue;
+    padding: 10px 0px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    display: block;
+}
 
+.explore-btn:hover{
+    transform: scale(1.1);
+}
 .music, .shows{
     width: 100%;
     background-color: #fff;
     padding-top: 2rem;
     margin-bottom: 5rem;
+}
+.sec-title{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+.sec-title::after{
+    content: "";
+    background-color: skyblue;
+    width: 120px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+
+    transform: translateX(-50%);
+}
+.music-album, .show-dates{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 2rem;
+}
+.music p{
+    margin-top: 2rem;
+    font-size: 18px;
+    text-align: center;
+    color: grey;
 }
 .content{
     width: 100%;
