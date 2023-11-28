@@ -32,7 +32,7 @@ links.forEach((link, index)=>{
 })
 
 window.addEventListener('scroll',()=>{
-    if(window.scrollY > 80){
+    if(window.scrollY > 100){
         header.classList.add("bg-header")
     }
     else{
@@ -42,13 +42,13 @@ window.addEventListener('scroll',()=>{
 
 $('.slides').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    arrows: true,
+    arrows: false,
     responsive: [
         {
-            breakpoint: 1080,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
