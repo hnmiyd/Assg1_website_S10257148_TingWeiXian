@@ -12,7 +12,7 @@
 
 header{
     background: rgba(0, 0, 0, 0.3);
-    padding-top: 15px;
+    padding-top: 10px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,13 +20,14 @@ header{
     transition: all 0.3s ease-in;
 }
 .bg-header{
-    background-color: rgb(188, 205, 219);
+    background-color: aliceblue;
 }
 .logo{
     width: fit-content;
     display: block;
     margin: 0px auto;
     background-color: #333;
+    padding: 10px 20px;
     color: #fff;
     border-radius: 25px;
 }
@@ -78,7 +79,8 @@ nav ul li a{
     background-size: cover;
     background-attachment: scroll;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .hero .text{
@@ -89,7 +91,7 @@ nav ul li a{
 .text h3{
     font-size: 45px;
     margin-bottom: 10px;
-
+    margin-bottom: 2rem;
 }
 .text p{
     font-size: 18px;
@@ -101,8 +103,10 @@ nav ul li a{
     width: 160px;
     text-align: center;
     border-radius: 10px;
+    color: #333;
     margin-top: 2rem;
     display: block;
+    transition: all 0.3s ease;
 }
 
 .explore-btn:hover{
@@ -122,11 +126,12 @@ nav ul li a{
 .sec-title::after{
     content: "";
     background-color: skyblue;
-    width: 150px;
-    height: 30px;
+    width: 120px;
+    height: 3px;
     border-radius: 5px;
     position: absolute;
-
+    bottom: -5px;
+    left: 50%;
     transform: translateX(-50%);
 }
 .music-album, .show-dates{
@@ -136,7 +141,7 @@ nav ul li a{
 }
 .music p{
     margin-top: 2rem;
-    font-size: 21px;
+    font-size: 18px;
     text-align: center;
     color: grey;
 }
@@ -193,12 +198,12 @@ nav ul li a{
     width: 100%;
     margin: 0px auto;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem 0px;
+    background-color: aliceblue;
 
-}
-@media screen and (max-width: 1100px) {
-    .hero .text{
-        width: 70%;
-    }
 }
 .links a{
     font-size: 40px;
@@ -270,11 +275,12 @@ nav ul li a{
   
   /* Remove extra left and right margins, due to padding in columns */
   .row {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3rem;
   }
   
@@ -285,26 +291,32 @@ nav ul li a{
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
-    width: 40%;
+    width: 30%;
     overflow: hidden;
     cursor: pointer;
   }
   .card img{
     width: 100%;
     object-fit: cover;
-
+    transition: all 0.3s ease-in;
   }
   .card:hover img{
     transform: scale(1.1);
   }
   .card h3{
     margin-top: 1rem;
-
+    color: #333;
   }
   .card p{
     margin-top: 1rem;
-
+    color: grey;
   }
+@media screen and (max-width: 1100px) {
+    .hero .text{
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .spotify-track{
         flex-direction: column;
@@ -348,7 +360,7 @@ nav ul li a{
     .card {
         width: 100%;
         display: block;
-
+        margin-bottom: 20px;
     }
 }
 
@@ -358,6 +370,8 @@ nav ul li a{
         top: 56px;
         z-index: 10;
         background-color: aliceblue;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in;
     }
     .nav-active{
         transform: translateX(0%);
