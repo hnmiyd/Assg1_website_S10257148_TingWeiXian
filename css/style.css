@@ -73,7 +73,7 @@ nav ul li a{
 .hero{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(../img/bg3.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../img/renforshort-toronto.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
