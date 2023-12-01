@@ -39,20 +39,3 @@ window.addEventListener('scroll',()=>{
         header.classList.remove("bg-header")
     }
 })
-
-$('.slides').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
-  });
