@@ -1,4 +1,4 @@
-# my-newbie-repo
+# Assg1_website_S10257148_TingWeiXian
 Asg1- Ting Wei Xian
 Build a website for a band (real or fictional)
 
