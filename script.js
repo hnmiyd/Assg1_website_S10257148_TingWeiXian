@@ -1,8 +1,10 @@
+/*initializing variables*/
 const hamburger = document.getElementById("hamburger")
 const nav = document.querySelector(".menu")
 const header = document.querySelector("header")
 const links = document.querySelectorAll(".menu li")
 
+/*checks and changes the navigation menu when clicked on*/
 hamburger.addEventListener("click",()=>{
     if(nav.classList.contains("nav-active")){
         nav.classList.remove("")
@@ -18,6 +20,7 @@ hamburger.addEventListener("click",()=>{
     }
 })
 
+/*removes fixed header from the nav menu, changes menu icon to use other fa-menu .*/
 links.forEach((link, index)=>{
     link.addEventListener("click",()=>{
         links.forEach((menu_link)=>{
@@ -31,6 +34,7 @@ links.forEach((link, index)=>{
     })
 })
 
+/*changes header background colour when scrolled*/
 window.addEventListener('scroll',()=>{
     if(window.scrollY > 100){
         header.classList.add("bg-header")
